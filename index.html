@@ -1,5 +1,37 @@
+<!DOCTYPE html>
 <html>
-  <body>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
     <script src="bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__photo">
+        </div>
+        <h2 class="header__title">Nitin Koli</h2>
+        <p class="header__text">My Personal Web Experiments</p>
+      </div>
+      <a href="matchcenter" target="_blank" class="row">
+        <div>
+          <h2>Match Center</h2>
+          <p>Fantasy Sports</p>
+        </div>
+        <div class="row__arrow">
+          &#x2197;
+        </div>
+      </a>
+    </div>
   </body>
+  <script type="text/javascript">
+    var rows = document.querySelectorAll('a.row');
+    for(i=0;i < rows.length; i++) {
+      rows[i].addEventListener('click', function() {
+        this.classList.add('visited');
+      })
+    }
+  </script>
 </html>
