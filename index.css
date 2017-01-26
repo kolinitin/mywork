@@ -4,7 +4,7 @@ html, body {
 }
 body {
   font-family: 'Arimo', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   margin: 0;
 }
@@ -22,6 +22,7 @@ h2 {
   font-family: 'Oswald', sans-serif;
   transition: color .3s ease;
   color: #666;
+  text-transform: uppercase;
 }
 p {
   font-family: 'Open Sans', sans-serif;
@@ -63,8 +64,33 @@ a {
   transform: translateX(0px);
   opacity: 1;
 }
-.row:hover h1 {
+.row:hover h2 {
   color: #333;
+}
+.row__details {
+  width: 100%;
+}
+.row__details_brief {
+  margin: 5px 0 0 0;
+}
+.row__details_other {
+  display: flex;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+.row__details_other__text {
+  font-size: 11px;
+  color: #bbb;
+  text-transform: uppercase;
+  width: 100%;
+}
+.row__details_other__text:nth-child(1) {
+  flex-shrink: 1;
+}
+.row__details_other__text p {
+  font-size: 11px;
+  color: #888;
+  margin: 2px 0 0 0;
 }
 .header {
   margin: 40px 0;

@@ -1,3 +1,3 @@
-# myexp
+# mywork
 
-Repo for my personal web experiments.
+Repo for my web projects / experiments.
