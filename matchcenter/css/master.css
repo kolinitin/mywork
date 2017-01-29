@@ -1,0 +1,228 @@
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #222;
+}
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+.top_bar {
+  width: 100%;
+  height: 40px;
+  background: #222;
+}
+
+/* LEFT PANEL START */
+.left_panel {
+  width: 20%;
+  background: #f6f6f6;
+  border-right: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.avatar {
+  width: 100%;
+  margin: 20px 0 0 0;
+  color: #222;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.avatar__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #eee;
+  background: url('https://uinames.com/api/photos/male/33.jpg') no-repeat center center;
+  background-size: contain;
+  border: 1px solid #aaa;
+}
+.avatar__name {
+  align-self: center;
+  text-align: center;
+  width: 80%;
+  font-size: .8em;
+  margin: 10px 0 0 0;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.available_balance {
+  margin: 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.available_balance__title {
+  font-size: .6em;
+  color: #888;
+  padding: 0 0 5px 0;
+}
+.available_balance__amount {
+  font-size: 1.5em;
+  color: #222;
+  font-weight: bold;
+}
+.available_balance__action {
+  font-size: .6em;
+  color: #0072c2;
+  padding: 5px 0 0 0;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.available_balance:hover .available_balance__action {
+  opacity: 1;
+}
+ul.tabs {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+ul.tabs li {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  color: #888;
+  font-size: .7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  cursor: pointer;
+  transition: .3s ease;
+}
+ul.tabs li.active {
+  color: #222;
+  border-bottom: 2px solid #D74840;
+}
+ul.tabs li:hover {
+  color: #222;
+}
+
+.match_row {
+  padding: 15px;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  opacity: .5;
+  transition: opacity .3s ease;
+  cursor: pointer;
+}
+.match_row__title {
+  font-size: 1.2em;
+  color: #222;
+}
+.match_row__series {
+  text-transform: uppercase;
+  font-size: .7em;
+  color: #888;
+  padding: 4px 0 0 0;
+}
+.match_row__timer {
+  align-self: center;
+  margin-left: auto;
+  font-size: .8em;
+  color: #D74840;
+}
+.match_row.active {
+  opacity: 1;
+}
+.match_row:hover {
+  opacity: 1;
+}
+/* LEFT PANEL END */
+
+
+/* RIGHT PANEL START */
+.right_panel {
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+}
+.selected_match {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  width: 40%;
+  text-align: center;
+}
+.selected_match_fixture {
+  display: flex;
+}
+.selected_match_teams {
+  flex: 1;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.selected_match_timer {
+  margin: 10px 0 0 0;
+}
+.selected_match_timer p {
+  color: #888;
+  font-size: .7em;
+  margin: 0 0 5px 0;
+}
+.selected_match_timer h2 {
+  color: #e10000;
+  font-size: 1.2em;
+}
+.selected_match_series {
+  font-size: .8em;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.team_vs {
+  align-self: center;
+  margin: 0 20px;
+  color: #888;
+  font-weight: normal;
+}
+.team_flag {
+  background: #444;
+  width: 60px;
+  height: 34px;
+  margin: 0 auto 5px auto;
+  border: 1px solid #aaa;
+}
+.india {
+  background: url('../images/india-flag-icon-64.png') no-repeat center center;
+  background-size: cover;
+}
+.england {
+  background: url('../images/england-flag-icon-64.png') no-repeat center center;
+  background-size: cover;
+}
+.cricket_field {
+  width: 60%;
+  text-align: center;
+}
+.cricket_field img {
+  width: 450px;
+}

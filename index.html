@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nitin Koli - Front End Developer</title>
+    <title>Nitin Koli - Web Developer / Designer</title>
     <link rel="stylesheet" href="index.css">
     <script src="bundle.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
@@ -14,16 +14,21 @@
         <div class="header__photo">
         </div>
         <h2 class="header__title">Nitin Koli</h2>
-        <p class="header__text">List of my web projects / experiements</p>
+        <p class="header__text">List of my web projects / experiements / concepts / designs</p>
       </div>
-      <a href="matchcenter" target="_blank" class="row">
+      <div id="list_container">
+
+      </div>
+      <!-- <a href="matchcenter" target="_blank" class="row">
         <div class="row__details">
           <h2>Match Center</h2>
           <p class="row__details_brief">Fantasy Sports</p>
           <div class="row__details_other">
+            <div class="row__details_other__text">Type: <p>Concept</p></div>
+            <div class="row__details_other__text">Preview: <p>HTML</p></div>
             <div class="row__details_other__text">Platform: <p>Desktop</p></div>
             <div class="row__details_other__text">Design Credits: <p>Own</p></div>
-            <div class="row__details_other__text">Date: <p>24th Jan, 2017</p></div>
+            <div class="row__details_other__text">Date: <p>24<span class="date">th</span> Jan, 2017</p></div>
           </div>
         </div>
         <div class="row__arrow">
@@ -35,23 +40,18 @@
           <h2>PSA</h2>
           <p class="row__details_brief">Pride Sports Alliance</p>
           <div class="row__details_other">
+            <div class="row__details_other__text">Type: <p>Project</p></div>
+            <div class="row__details_other__text">Preview: <p>HTML</p></div>
             <div class="row__details_other__text">Platform: <p>Responsive</p></div>
             <div class="row__details_other__text">Design Credits: <p>Own</p></div>
-            <div class="row__details_other__text">Date: <p>14th Oct, 2015</p></div>
+            <div class="row__details_other__text">Date: <p>14 Oct, 2015</p></div>
           </div>
         </div>
         <div class="row__arrow">
           &#x2197;
         </div>
-      </a>
+      </a> -->
     </div>
   </body>
-  <script type="text/javascript">
-    var rows = document.querySelectorAll('a.row');
-    for(i=0;i < rows.length; i++) {
-      rows[i].addEventListener('click', function() {
-        this.classList.add('visited');
-      })
-    }
-  </script>
+  <script type="text/javascript" src="scripts.js"></script>
 </html>

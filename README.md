@@ -1,3 +1,3 @@
 # mywork
 
-Repo for my web projects / experiments.
+Repo for my web projects / experiments / concepts.
