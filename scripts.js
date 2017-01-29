@@ -6,25 +6,39 @@ for(i=0;i < rows.length; i++) {
   })
 }
 
-var workList;
-
 (function(){
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function(callback) {
-    if(xhr.readyState === 4) {
-      workList = JSON.parse(xhr.responseText);
-      console.log(workList);
-    }
-  }
-  xhr.open('GET', 'https://kolinitin89.github.io/mywork/worklist.json', true);
-  xhr.send();
+
 })();
 
+var workList;
 
-function getJSON() {
-  console.log(workList);
+
+function XHR(file, callback){
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4 && xhr.status === 200){
+            callback(xhr.responseText);
+        }
+    }
+    xhr.open('GET', 'https://kolinitin89.github.io/mywork/worklist.json', true);
+    xhr.send();
 }
-getJSON();
+
+XHR();
+
+// function getJSON(callback) {
+//   var xhr = new XMLHttpRequest();
+//   xhr.onreadystatechange = function() {
+//     if(xhr.readyState === 4) {
+//       workList = callback(xhr.responseText);
+//       console.log(workList);
+//     }
+//   }
+//   xhr.open('GET', 'https://kolinitin89.github.io/mywork/worklist.json', true);
+//   xhr.send();
+//
+// }
+// getJSON();
 
 //
 // var listHTML = document.getElementById('list_container');
