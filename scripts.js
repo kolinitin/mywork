@@ -6,11 +6,9 @@ for(i=0;i < rows.length; i++) {
   })
 }
 
-
-
 var workList;
 
-function getJSON() {
+(function(){
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function(callback) {
     if(xhr.readyState === 4) {
@@ -18,9 +16,13 @@ function getJSON() {
       console.log(workList);
     }
   }
-  xhr.open('GET', 'worklist.json');
+  xhr.open('GET', 'https://kolinitin89.github.io/mywork/worklist.json', true);
   xhr.send();
+})();
 
+
+function getJSON() {
+  console.log(workList);
 }
 getJSON();
 
