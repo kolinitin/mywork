@@ -118,7 +118,7 @@ h2.title {
     margin: 0 5%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   .row__details_other {
     flex-direction: column;
   }

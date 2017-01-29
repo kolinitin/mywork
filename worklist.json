@@ -1,11 +1,11 @@
 [
   {
-    "title" : "Dream11 Mobile Web",
-    "brief" : "Contributed in developing mobile web pages",
-    "type" : "Project",
+    "title" : "Mouseover Effect",
+    "brief" : "Web experiment with SVG and mouseover",
+    "type" : "Experiment",
     "preview" : "Live",
-    "platform" : "Mobile",
-    "link" : "https://fantasycricket.dream11.com/in/"
+    "platform" : "Desktop",
+    "link" : "mouseover-effect"
   },
   {
     "title" : "Dream11 FairPlay",

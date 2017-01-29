@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+}
+.main {
+	display: flex;
+	height: 100vh;
+}
+.slide {
+	flex: 1;
+	background: #eee;
+	align-self: stretch;
+	justify-content: center;
+	display: flex;
+  flex-direction: column;
+	transition: flex .5s ease;
+  cursor: pointer;
+}
+.slide:hover {
+	flex: 1.5;
+}
+.title {
+	font-family: 'Oswald', sans-serif;
+	align-self: center;
+  text-align: center;
+	color: #fff;
+	font-size: 30px;
+  text-transform: uppercase;
+	transition: .5s ease;
+}
+.slide:hover .title {
+	transform: scale(1.1);
+}
+.brief {
+  width: 250px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  align-self: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: .5s ease .5s;
+}
+.slide:hover .brief {
+  opacity: 1;
+  transform: translateY(0);
+}
+.one {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('Art-by-Billy-Christian-Jakarta-Bandung-Indonesia.jpg') no-repeat center center;
+  background-size: cover;
+}
+.two {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('Art-by-Guillem-H-Pongiluppi-Barcelona-Spain.jpg') no-repeat center center;
+  background-size: cover;
+}
+.three {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('Art-by-Jesper-Ejsing-Copenhagen-Denmark.jpg') no-repeat center center;
+  background-size: cover;
+}
+.four {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('Art-by-Yaroslav-Radeckiy-Zhitomir-Ukraine.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.icon {
+  text-align: center;
+  align-self: center;
+}
+.circle {
+  stroke-dasharray: 251;
+  stroke-dashoffset: -251;
+  transition: .5s ease .5s;
+}
+.text {
+  opacity: 0;
+  transition: .5s ease 1s;
+}
+.slide:hover .circle {
+  stroke-dashoffset: 0;
+}
+.slide:hover .text {
+  opacity: 1;
+}
