@@ -44,8 +44,11 @@ a {
   border-bottom: 1px solid #eaeaea;
   transition: background .3s ease;
 }
+.row:nth-child(even) {
+  background: #fbfbfb;
+}
 .row:hover {
-  background: #fafafa;
+  background: #eff8ff;
 }
 .row.visited {
   opacity: .7;

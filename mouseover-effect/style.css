@@ -47,6 +47,7 @@ body {
 .one {
 	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('Art-by-Billy-Christian-Jakarta-Bandung-Indonesia.jpg') no-repeat center center;
   background-size: cover;
+  transition: .5s ease;
 }
 .two {
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('Art-by-Guillem-H-Pongiluppi-Barcelona-Spain.jpg') no-repeat center center;
@@ -60,7 +61,6 @@ body {
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('Art-by-Yaroslav-Radeckiy-Zhitomir-Ukraine.jpg') no-repeat center center;
   background-size: cover;
 }
-
 .icon {
   text-align: center;
   align-self: center;
