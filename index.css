@@ -3,10 +3,11 @@ html, body {
   height: 100%;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
   font-weight: 400;
   margin: 0;
+  overflow: hidden;
 }
 * {
   box-sizing: border-box;
@@ -19,12 +20,12 @@ ul, li {
   list-style: none;
 }
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   color: #666;
   font-weight: 400;
 }
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #888;
   font-size: 15px;
 }
@@ -35,6 +36,57 @@ a {
 .container {
   width: 900px;
   margin: 40px auto;
+}
+.about, .mywork {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+/* ABOUT */
+.about_left {
+  background: #3B3B3B;
+  width: 50%;
+  padding: 30px;
+}
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+ul.nav {
+  width: 100%;
+  display: flex;
+  color: #aaa;
+  align-items: center;
+  margin:0 0 0 20px;
+}
+ul.nav li {
+  margin: 0 20px;
+  cursor: pointer;
+  transition: color .4s ease;
+}
+ul.nav li.active {
+  color: #fff;
+}
+[id^=]
+.about_content {
+  height: 100%;
+  padding: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+h1.about_title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 58px;
+  color: #fff;
+}
+
+/* MYWORK */
+.mywork {
+  transform: translateX(100%);
 }
 .row {
   width: 100%;
