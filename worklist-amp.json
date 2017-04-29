@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+    "title" : "Mouseover Effect",
+    "brief" : "Web experiment with SVG and mouseover",
+    "type" : "Experiment",
+    "preview" : "Live",
+    "platform" : "Desktop",
+    "link" : "mouseover-effect"
+    },
+    {
+      "title" : "Dream11 FairPlay",
+      "brief" : "FairPlay landing page development",
+      "type" : "Project",
+      "preview" : "Live",
+      "platform" : "Responsive",
+      "link" : "https://fantasycricket.dream11.com/in/fairplay"
+    },
+    {
+      "title" : "Pride Sports Alliance",
+      "brief" : "PSA - Sports Community Website layout",
+      "type" : "Concept",
+      "preview" : "Demo",
+      "platform" : "Responsive",
+      "link" : "psa"
+    },
+    {
+      "title" : "Gooptales",
+      "brief" : "Kids - Storytelling website (layout 1)",
+      "type" : "Concept",
+      "preview" : "Image",
+      "platform" : "Desktop",
+      "link" : "designs/gooptales-layout-1.jpg"
+    },
+    {
+      "title" : "Gooptales",
+      "brief" : "Kids - Storytelling website (page 2 of layout 1)",
+      "type" : "Concept",
+      "preview" : "Image",
+      "platform" : "Desktop",
+      "link" : "designs/gooptales-layout-1_page-2.jpg"
+    },
+    {
+      "title" : "Gooptales",
+      "brief" : "Kids - Storytelling website (layout 2)",
+      "type" : "Concept",
+      "preview" : "Image",
+      "platform" : "Desktop",
+      "link" : "designs/gooptales-layout-2.jpg"
+    },
+    {
+      "title" : "Hanni Mobel",
+      "brief" : "Furniture Consultants website layout",
+      "type" : "Concept",
+      "preview" : "Image",
+      "platform" : "Desktop",
+      "link" : "designs/hanni-mobel-layout.jpg"
+    },
+    {
+      "title" : "Creative Marketing",
+      "brief" : "Banner Design",
+      "type" : "Project",
+      "preview" : "Image",
+      "platform" : "Desktop",
+      "link" : "designs/banner-creative-marketing.jpg"
+    },
+    {
+      "title" : "Intelligent Social Media",
+      "brief" : "Banner Design",
+      "type" : "Project",
+      "preview" : "Image",
+      "platform" : "Desktop",
+      "link" : "designs/banner-social-media.jpg"
+    },
+    {
+      "title" : "Smoke Watchers",
+      "brief" : "Landing page layout",
+      "type" : "Concept",
+      "preview" : "Image",
+      "platform" : "Desktop",
+      "link" : "designs/SW-layout-desktop.jpg"
+    },
+    {
+      "title" : "Smoke Watchers",
+      "brief" : "Landing page layout - mobile",
+      "type" : "Concept",
+      "preview" : "Image",
+      "platform" : "Mobile",
+      "link" : "designs/SW-layout-iPhone-portrait.jpg"
+    }
+  ]
+}

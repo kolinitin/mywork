@@ -1,0 +1,68 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="canonical" href="" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__photo">
+        </div>
+        <h2 class="header__title">Nitin Koli</h2>
+        <p class="header__text">List of my web projects / experiements / concepts</p>
+      </div>
+      <amp-list width="200"
+        height="200"
+        layout="responsive"
+        src="worklist-amp.json"
+        class="worklist">
+        <template type="amp-mustache">
+          <div>
+            <a href="{{link}}" target="_blank" class="row">
+              <div class="row__details">
+                <h2 class="title">{{title}}</h2>
+                <p class="row__details_brief">{{brief}}</p>
+                <div class="row__details_other">
+                  <div class="row__details_other__text">Type:
+                    <p>{{type}}</p>
+                  </div>
+                  <div class="row__details_other__text">Preview:
+                    <p>{{preview}}</p>
+                  </div>
+                  <div class="row__details_other__text">Platform:
+                    <p>{{platform}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row__arrow">
+                <svg height="48" viewBox="0 0 48 48" width="32">
+                  <path d="M0 0h48v48h-48z" fill="none" />
+                  <path fill="#0072c2" d="M38 38h-28v-28h14v-4h-14c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4v-14h-4v14zm-10-32v4h7.17l-19.66 19.66 2.83 2.83 19.66-19.66v7.17h4v-14h-14z"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </template>
+      </amp-list>
+    </div>
+  </body>
+</html>
