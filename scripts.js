@@ -37,23 +37,3 @@ function init() {
  });
 }
 init();
-
-
-// Navigation
-
-var about = document.getElementById('about')
-var mywork = document.getElementById('mywork')
-var links = document.querySelectorAll('.nav li')
-
-links.forEach(function(link){
-  link.addEventListener('click', function(){
-    if(link.classList.contains('active')){
-      return
-    } else {
-      for(i=0;i<links.length;i++){
-        links[i].classList.remove('active')
-      }
-      link.classList.add('active')
-    }
-  })
-})
